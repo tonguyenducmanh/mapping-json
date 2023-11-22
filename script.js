@@ -59,7 +59,11 @@ function replaceLanguage(originalLangObject, targetLangObject, customTargetObjec
             }
             // nếu key hiện tại có value là object thì gọi đệ quy
             if(typeof(element) == 'object'){
-                result[key] = replaceLanguage(result[key], targetLangObject[key], customTargetObject);
+                let targetLang = null;
+                if(targetLangObject && targetLangObject.hasOwnProperty(key) && targetLangObject[key]){
+                    targetLang = targetLangObject[key];
+                }
+                result[key] = replaceLanguage(result[key], targetLang, customTargetObject);
             }
         }
 
