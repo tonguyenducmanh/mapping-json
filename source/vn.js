@@ -1,5 +1,6 @@
 export default{
     "hand": "tay",
     "foot": `ngón chân`,
-    "head": "<p>wwwww</p>"
+    "head": "<p>wwwww</p>",
+    "chest":"nguc"
 }

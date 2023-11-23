@@ -56,6 +56,9 @@ function replaceLanguage(
       const element = result[key];
 
       if (typeof element == "string") {
+        //bo sung check neu trung value thi cung them vao error list
+        checkValueIsSameByKey(originalLangObject, targetLangObject, key);
+
         if (
           targetLangObject &&
           targetLangObject.hasOwnProperty(key) &&
@@ -93,4 +96,21 @@ function replaceLanguage(
   }
   return result;
 }
+
+/**
+ * bo sung check neu trung value thi cung them vao error list
+ */
+function checkValueIsSameByKey(originalLangObject, targetLangObject, key) {
+  if (
+    key &&
+    originalLangObject &&
+    originalLangObject.hasOwnProperty(key) &&
+    targetLangObject &&
+    targetLangObject.hasOwnProperty(key) &&
+    originalLangObject[key] == targetLangObject[key]
+  ) {
+    errorList[key] = originalLangObject[key];
+  }
+}
+
 // end region xử lý file

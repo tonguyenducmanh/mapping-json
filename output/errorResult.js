@@ -1,1 +1,1 @@
-export default { head: '<p>wwwww</p>' }
+export default { head: '<p>wwwww</p>', chest: 'nguc' }
