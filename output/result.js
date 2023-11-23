@@ -1,1 +1,1 @@
-{ hand: '手', foot: '脚趾', head: '<p>wwwww</p>' }
+export default { hand: '手', foot: '脚趾', head: '<p>wwwww</p>' }
