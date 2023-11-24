@@ -8,6 +8,7 @@ import util from "util";
 let errorList = {};
 let resultPath = "./output/result.js";
 let errorResultPath = "./output/errorResult.js";
+let logPath = "./output/log.txt";
 let exportDefault = "export default ";
 // end region biến toàn cục
 
@@ -15,6 +16,7 @@ translateNow();
 
 // region xử lý file
 function translateNow() {
+  let startTime = performance.now();
   //reset error
   errorList = {};
   if (originalLangObject && targetLangObject && customTargetObject) {
@@ -41,7 +43,21 @@ function translateNow() {
         if (err) throw err;
       }
     );
+    let endTime = performance.now();
+    // log thời gian chạy chương trình
+    logTime(startTime, endTime);
   }
+}
+
+function logTime(startTime, endTime) {
+  let seconds = Math.floor((endTime - startTime) / 1000);
+  fs.writeFile(
+    logPath,
+    `thời gian chạy của chương trình lần gần nhất là ${seconds} giây`,
+    (err) => {
+      if (err) throw err;
+    }
+  );
 }
 
 function replaceLanguage(
