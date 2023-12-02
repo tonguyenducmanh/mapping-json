@@ -2,7 +2,7 @@
 https://github.com/tonguyenducmanh/mapping-json
 
 ## lưu ý máy tính cần cài node js bản 16 trở lên để có thể sử dụng được cú pháp import trong file js
-
+## option có thể sử dụng github Codespaces để chạy project này trên web, không cần cài nodejs và vscode
 ## trường hợp có nhiều version node js thì dùng nvm để quản lý và chạy nvm use 16
 
 ## Để sử dụng làm theo các bước sau
