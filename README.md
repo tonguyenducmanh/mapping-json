@@ -1,4 +1,4 @@
-## project này là phiên bản nodeJS của project https://github.com/tonguyenducmanh/tool-mapping-json-key-value
+## project này là phiên bản nodeJS của project https://github.com/tonguyenducmanh/tool-mapping-json
 
 ## lưu ý máy tính cần cài node js bản 16 trở lên để có thể sử dụng được cú pháp import trong file js
 
