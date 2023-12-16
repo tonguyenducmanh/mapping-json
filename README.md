@@ -1,6 +1,7 @@
-## lưu ý máy tính cần cài node js bản 16 trở lên để có thể sử dụng được cú pháp import trong file js
-## option có thể sử dụng github Codespaces để chạy project này trên web, không cần cài nodejs và vscode
-## trường hợp có nhiều version node js thì dùng nvm để quản lý và chạy nvm use 16
+## tool giúp compare key value của 2 object json, object đích sẽ gồm các key của object gốc nếu còn thiếu, ngoài ra sẽ trả về các key còn thiếu
+lưu ý máy tính cần cài node js bản 16 trở lên để có thể sử dụng được cú pháp import trong file js.
+option có thể sử dụng github Codespaces để chạy project này trên web, không cần cài nodejs và vscode.
+trường hợp có nhiều version node js thì dùng nvm để quản lý và chạy nvm use 16.
 
 ## Để sử dụng làm theo các bước sau
 
